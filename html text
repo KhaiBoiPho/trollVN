@@ -1,0 +1,257 @@
+1. Tiêu đề HTML được xác định bằng thẻ <h1> đến <h6>. <h1> xác định tiêu đề quan trọng nhất. <h6> xác định tiêu đề ít quan trọng nhất.
+
+   - Ví dụ:
+     - <h1>Heading 1</h1>
+     - <h2>Heading 2</h2>
+     - ...
+     - <h6>Heading 6</h6>
+   - Mỗi tiêu đề HTML có kích thước mặc định. Tuy nhiên, bạn có thể chỉ định kích thước cho bất kỳ tiêu đề nào bằng style thuộc tính này bằng thuộc tính CSS font-size.
+     - Ví dụ: <h1 style="font-size:60px;">Heading 1</h1>
+
+2. Phần tử HTML <p> xác định một đoạn văn. Một đoạn văn luôn bắt đầu trên một dòng mới và trình duyệt sẽ tự động thêm một số khoảng trắng (lề) trước và sau một đoạn văn.
+
+   - Thuộc tính style được sử dụng để thêm kiểu cho một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
+     - Ví dụ: <p style="color:red;">This is a paragraph.</p>
+   - Thuộc title tính xác định một số thông tin bổ sung về một phần tử. Giá trị của thuộc tính tiêu đề sẽ được hiển thị dưới dạng chú giải công cụ khi bạn di chuột qua phần tử.
+     - Ví dụ: <p title="I'm a tooltip">This is a paragraph.</p>
+   - Dấu ngoặc kép xung quanh các giá trị thuộc tính là phổ biến nhất trong HTML, nhưng dấu ngoặc đơn cũng có thể được sử dụng. Trong một số trường hợp, khi bản thân giá trị thuộc tính chứa dấu ngoặc kép thì cần sử dụng dấu ngoặc đơn.
+     - Ví dụ: <p title="John 'ShotGun' Nelson">
+
+3. Phần tử HTML <pre>: xác định văn bản được định dạng sẵn. Văn bản bên trong phần tử <pre> được hiển thị bằng phông chữ có chiều rộng cố định (thường là Courier) và nó giữ nguyên cả khoảng trắng và ngắt dòng.
+
+   - Ví dụ:
+      <pre>
+        My Bonnie lies over the ocean.
+        My Bonnie lies over the sea.
+        My Bonnie lies over the ocean.
+        Oh, bring back my Bonnie to me.
+      </pre>
+
+4. Phần tử HTML <br>: xác định ngắt dòng. Sử dụng <br> nếu bạn muốn ngắt dòng (một dòng mới) mà không bắt đầu đoạn văn mới. Thẻ <br> là một thẻ trống, có nghĩa là nó không có thẻ kết thúc.
+
+   - Ví dụ: <p>This is<br>a paragraph<br>with line breaks.</p>
+
+5. Thẻ <hr>: xác định điểm ngắt theo chủ đề trong trang HTML và thường được hiển thị dưới dạng quy tắc ngang. Phần tử <hr> được sử dụng để phân tách nội dung (hoặc xác định sự thay đổi) trong trang HTML. Thẻ <hr> là một thẻ trống, nghĩa là nó không có thẻ kết thúc.
+
+   - Ví dụ:
+        <h1>This is heading 1</h1>
+        <p>This is some text.</p>
+        <hr>
+        <h2>This is heading 2</h2>
+        <p>This is some other text.</p>
+        <hr>
+
+6. Thẻ <a> xác định một siêu liên kết. Thuộc tính href chỉ định URL của trang mà liên kết tới.
+
+   - Ví dụ: <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+7. Thẻ <img> xác định một hình ảnh. Thuộc tính src chỉ định URL.
+
+   - Ví dụ: <img src="image.jpg" alt="Image">
+   - Có hai cách để chỉ định URL trong thuộc tính src:
+     1. URL tuyệt đối - Liên kết tới hình ảnh bên ngoài được lưu trữ trên một trang web khác. Ví dụ: src="https://www.w3schools.com/images/img_girl.jpg".
+        - Lưu ý: Hình ảnh bên ngoài có thể có bản quyền. Nếu bạn không được phép sử dụng nó, bạn có thể vi phạm luật bản quyền. Ngoài ra, bạn không thể kiểm soát hình ảnh bên ngoài; nó có thể đột ngột bị loại bỏ hoặc thay đổi.
+     2. URL tương đối - Liên kết tới hình ảnh được lưu trữ trong trang web. Ở đây, URL không bao gồm tên miền. Nếu URL bắt đầu không có dấu gạch chéo, nó sẽ liên quan đến trang hiện tại. Ví dụ: src="img_girl.jpg". Nếu URL bắt đầu bằng dấu gạch chéo thì nó sẽ liên quan đến tên miền. Ví dụ: src="/images/img_girl.jpg".
+   - Mẹo: Tốt nhất bạn nên sử dụng URL tương đối. Chúng sẽ không bị hỏng nếu bạn thay đổi tên miền.
+   - Thẻ <img> cũng phải chứa thuộc tính chiều rộng và chiều cao, xác định chiều rộng và chiều cao của hình ảnh (tính bằng pixel):
+     - Ví dụ: <img src="img_girl.jpg" width="500" height="600">
+   - Thuộc tính bắt buộc alt cho <img> thẻ chỉ định văn bản thay thế cho hình ảnh nếu hình ảnh vì lý do nào đó không thể hiển thị. Điều này có thể do kết nối chậm hoặc lỗi thuộc tính src hoặc do người dùng sử dụng trình đọc màn hình.
+     - Ví dụ: <img src="img_girl.jpg" alt="Girl with a jacket">
+
+8. Thuộc tính HTML style được sử dụng để thêm kiểu cho một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
+
+- Việc đặt kiểu của phần tử HTML có thể được thực hiện bằng style thuộc tính. Thuộc tính HTML style có cú pháp sau:
+  - Ví dụ: <tag-name style="property:value;">
+  - Thuộc tính là thuộc tính CSS. Giá trị là một giá trị CSS.
+- Ví dụ 1 (Thuộc tính CSS background-color xác định màu nền cho phần tử HTML):
+    <body style="background-color:powderblue;">
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    </body>
+- Ví dụ 2 (Đặt màu nền cho hai phần tử khác nhau):
+    <body>
+    <h1 style="background-color:powderblue;">This is a heading</h1>
+    <p style="background-color:tomato;">This is a paragraph.</p>
+    </body>
+- Ví dụ 3 (Thuộc tính CSS color xác định màu văn bản cho phần tử HTML):
+    <h1 style="color:blue;">This is a heading</h1>
+    <p style="color:red;">This is a paragraph.</p>
+- Ví dụ 4 (Thuộc tính CSS font-family xác định phông chữ được sử dụng cho phần tử HTML):
+    <h1 style="font-family:ver-dana;">This is a heading</h1>
+    <p style="font-family:courier;">This is a paragraph.</p>
+- Ví dụ 5 (Thuộc tính CSS font-size xác định kích thước văn bản cho phần tử HTML):
+    <h1 style="font-size:300%;">This is a heading</h1>
+    <p style="font-size:160%;">This is a paragraph.</p>
+- Ví dụ 6 (Thuộc tính CSS text-align xác định căn chỉnh văn bản theo chiều ngang cho phần tử HTML):
+    <h1 style="text-align:center;">Centered Heading</h1>
+    <p style="text-align:center;">Centered paragraph.</p>
+
+9. Các phần tử định dạng HTML
+
+- Các phần tử định dạng được thiết kế để hiển thị các loại văn bản đặc biệt:
+
+  1. <b>- Chữ in đậm
+  2. <strong>- Văn bản quan trọng
+  3. <i>- Chữ in nghiêng
+  4. <em>- Đoạn văn bản được nhấn mạnh
+  5. <mark>- Văn bản được đánh dấu
+  6. <small>- Văn bản nhỏ hơn
+  7. <del>- Văn bản đã xóa
+  8. <ins>- Đã chèn văn bản
+  9. <sub>- Văn bản đăng ký
+  10. <sup>- Văn bản siêu chữ
+
+      1. Phần tử HTML <b> xác định văn bản in đậm mà không có bất kỳ tầm quan trọng nào thêm.
+
+      - Ví dụ: <b>This text is bold</b>
+
+      2. Phần tử HTML <strong> xác định văn bản có tầm quan trọng cao. Nội dung bên trong thường được hiển thị in đậm.
+
+      - <strong>This text is important!</strong>
+
+      3. Phần tử HTML <i> xác định một phần văn bản bằng giọng nói hoặc tâm trạng thay thế. Nội dung bên trong thường được hiển thị bằng chữ nghiêng.
+
+      - <i>This text is in italics</i>
+
+      4. Phần tử HTML <em> xác định văn bản được nhấn mạnh. Nội dung bên trong thường được hiển thị bằng chữ nghiêng.
+
+      - <em>This text is emphasized</em>
+
+      5. Phần tử HTML <small> xác định văn bản nhỏ hơn:
+
+      - <small>This is some smaller text.</small>
+
+      6. Phần tử HTML <mark> xác định văn bản cần được đánh dấu hoặc đánh dấu:
+
+      - <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+      7. Phần tử HTML <del> xác định văn bản đã bị xóa khỏi tài liệu. Các trình duyệt thường sẽ gạch một dòng qua văn bản đã xóa:
+
+      - <p>My favorite color is <del>blue</del> red.</p>
+
+      8. Phần tử HTML <ins> xác định một văn bản đã được chèn vào tài liệu. Các trình duyệt thường sẽ gạch dưới văn bản được chèn:
+
+      - <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+      9. Phần tử HTML <sub> xác định văn bản chỉ số dưới. Văn bản chỉ số dưới xuất hiện nửa ký tự bên dưới dòng bình thường và đôi khi được hiển thị bằng phông chữ nhỏ hơn. Văn bản chỉ số dưới có thể được sử dụng cho các công thức hóa học:
+
+      - <p>This is <sub>subscripted</sub> text.</p>
+
+      10. Phần tử HTML <sup> xác định văn bản chỉ số trên. Văn bản chỉ số trên xuất hiện nửa ký tự phía trên dòng bình thường và đôi khi được hiển thị bằng phông chữ nhỏ hơn. Văn bản chỉ số trên có thể được sử dụng cho chú thích cuối trang, như WWW [1] :
+
+      - <p>This is <sup>superscripted</sup> text.</p>
+
+10. Phần tử HTML <blockquote> xác định một phần được trích dẫn từ một nguồn khác. Trình duyệt thường thụt lề <blockquote> các phần tử.
+
+- Ví dụ:
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+11. Thẻ HTML <q>xác định một trích dẫn ngắn. Các trình duyệt thường chèn dấu ngoặc kép xung quanh câu trích dẫn.
+
+- Ví dụ: <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+12. Thẻ HTML <abbr> xác định từ viết tắt hoặc từ viết tắt, như "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Đánh dấu các chữ viết tắt có thể cung cấp thông tin hữu ích cho trình duyệt, hệ thống dịch thuật và công cụ tìm kiếm.
+
+- Mẹo: Sử dụng thuộc tính tiêu đề chung để hiển thị mô tả cho từ viết tắt/viết tắt khi bạn di chuột qua phần tử.
+- Ví dụ:
+    <p>The <abbr title="World Wide Web">WWW</abbr> is a system of
+
+13. Thẻ HTML <address> xác định thông tin liên hệ của tác giả/chủ sở hữu tài liệu hoặc bài viết. Thông tin liên hệ có thể là địa chỉ email, URL, địa chỉ thực, số điện thoại, địa chỉ mạng xã hội, v.v. Văn bản trong phần <address> tử thường hiển thị ở dạng in nghiêng và trình duyệt sẽ luôn thêm dấu ngắt dòng trước và sau phần <address> tử.
+
+- Ví dụ:
+    <address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+    </address>
+
+14. Thẻ HTML <cite> xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.). Lưu ý: Tên người không phải là tên tác phẩm. Văn bản trong <cite> phần tử thường hiển thị ở dạng in nghiêng.
+
+- Ví dụ: <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+15. BDO là viết tắt của Ghi đè hai chiều. Thẻ HTML <bdo> được sử dụng để ghi đè hướng văn bản hiện tại:
+
+- Ví dụ: <bdo dir="rtl">This text will be written from right to left</bdo>
+
+16. Đặt màu cho viền thẻ
+
+- Ví dụ:
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+
+16. Trong HTML, màu sắc cũng có thể được chỉ định bằng các giá trị RGB, giá trị HEX, giá trị HSL, giá trị RGBA và giá trị HSLA.
+
+- Ví dụ:
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+17. Thuộc tính CSS margin xác định lề (khoảng trắng) bên ngoài đường viền.
+
+- Ví dụ: 
+    p {
+      border: 2px solid powderblue;
+      margin: 50px;
+    }
+
+18. Thuộc tính CSS padding xác định khoảng đệm (khoảng trắng) giữa văn bản và đường viền.
+
+- Ví dụ: 
+    p {
+      border: 2px solid powderblue;
+      padding: 30px;
+    }
+
+19. Liên kết HTML - Thuộc tính đích. Các biểu định kiểu bên ngoài có thể được tham chiếu bằng một URL đầy đủ hoặc bằng một đường dẫn liên quan đến trang web hiện tại.
+
+- Ví dụ:
+    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+20. Theo mặc định, trang được liên kết sẽ được hiển thị trong cửa sổ trình duyệt hiện tại. Để thay đổi điều này, bạn phải chỉ định một mục tiêu khác cho liên kết.
+
+- Thuộc targettính chỉ định nơi mở tài liệu được liên kết.
+- Thuộc targettính có thể có một trong các giá trị sau:
+    _self- Mặc định. Mở tài liệu trong cùng cửa sổ/tab khi nó được nhấp vào
+    _blank- Mở tài liệu trong cửa sổ hoặc tab mới
+    _parent- Mở tài liệu trong khung cha
+    _top- Mở tài liệu ở chế độ toàn màn hình
+- Ví dụ: <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+21. URL tuyệt đối so với URL tương đối. Cả hai ví dụ trên đều sử dụng URL tuyệt đối (địa chỉ web đầy đủ) trong href thuộc tính. Liên kết cục bộ (liên kết đến một trang trong cùng một trang web) được chỉ định bằng URL tương đối (không có phần "https://www"):
+
+- Ví dụ:
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+22. Liên kết HTML - Sử dụng hình ảnh làm liên kết. Để sử dụng hình ảnh làm liên kết, chỉ cần đặt <img> thẻ bên trong <a> thẻ:
+
+- Ví dụ: 
+    <a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+23. Sử dụng mailto:bên trong hrefthuộc tính để tạo liên kết mở chương trình email của người dùng (để cho phép họ gửi email mới):
+
+- Ví dụ: <a href="mailto:someone@example.com">Send email</a>
+
+24. Để sử dụng nút HTML làm liên kết, bạn phải thêm một số mã JavaScript. JavaScript cho phép bạn chỉ định điều gì xảy ra ở một số sự kiện nhất định, chẳng hạn như một lần nhấp vào nút:
+
+- Ví dụ: <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+25. Thuộc title tính chỉ định thông tin bổ sung về một phần tử. Thông tin thường được hiển thị dưới dạng văn bản chú giải công cụ khi chuột di chuyển qua phần tử.
+
+- Ví dụ: <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
